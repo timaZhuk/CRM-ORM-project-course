@@ -1,0 +1,58 @@
+Creating Data with Models
+query and Filter records
+Relationshipr in the ORM
+Aggregating and Grouping
+Subqueries, Conditional Expressions
+Transactions
+Indexes, Constraints
+**************************
+python -m venv env 
+source env/bib/activate
+deactivate
+pip install django
+
+
+****TodoList****
+DONE Create Base teplate
+DONE Create Front page template
+DONE Create about page
+DONE Create Sign up / Log in templates
+DONE Basic list page for projets
+DONE Basic detail page for projects, todolists etc
+
+DONE Set up the dev environment
+DONE Create empty project
+DONE Create core app and front page
+DONE Create about page
+
+DONE Custom user model
+DONE-sign up
+DONE-Log in
+
+DONE Project list page
+-DONE Crate project
+-DONE Project detail page
+-DONE Edit project
+-DONE Delete project
+
+-DONE Create todo list
+-DONE Todo list detail page
+-DONE Edit todo list
+-DONE Delete todo List
+
+-DONE Create task
+-DONE Task detail page
+-DONE Edit tasks
+-DONE Delete tasks
+-
+
+File uploads for projects
+-Files list on project page
+-Delete Files
+
+-Create notes for project
+-Notes list on project
+-Detail page fro notes
+- Edit note 
+-Delete note
+-

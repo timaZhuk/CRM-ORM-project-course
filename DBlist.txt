@@ -1,0 +1,43 @@
+project management system
+djangopms
+
+#----------------
+user:
+id bigint pk
+first_name CharField
+
+
+#----------------
+team:
+id bigint pk
+name CharField
+(Forein Key user_id) users ManyToManyField Refernce (user.id)
+
+#-------------------
+client:
+id bigint pk
+team ForeignKey
+name CharField
+comments=ManyToManyField
+created_at DateTimeField 
+
+#------------------------
+todolist:
+id bigint pk
+client ForeignKey
+name CharField
+comments=ManyToManyField
+created_by ForiegnKey
+created_at DateTimeField
+
+#-------------------------
+comment:
+id bigint pk
+content TextField
+created_by ForeignKey
+created_at DateTimeField
+
+
+
+
+

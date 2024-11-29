@@ -1,0 +1,40 @@
+{% extends 'core/base.html'%}
+<!--  -->
+{% block content %}
+<!--  -->
+<h1 class="mb-6 text-3xl">Edit TodoList</h1>
+
+<!-- List of projects -->
+<form action="." method="post" class="mt-6 px-4 space-y-4">
+  {% csrf_token %}
+
+  <!-- Email -->
+  <div>
+    <label>Name</label><br />
+    <input
+      type="text"
+      name="name"
+      value="{{todolist.name}}"
+      class="w-full py-4 px-6 bg-slate-400 text-white"
+    />
+  </div>
+  <!-- Password 1 -->
+  <div>
+    <label>Description</label><br />
+    <textarea
+      name="description"
+      class="w-full py-4 px-6 bg-slate-400 text-white"
+    >
+{{todolist.description}}</textarea
+    >
+  </div>
+  <!-- Password 2 -->
+
+  <!-- Button -->
+  <div>
+    <button class="py-4 px-8 bg-sky-600 text-white">Submit</button>
+  </div>
+</form>
+
+<!--  -->
+{% endblock %}
